@@ -15,7 +15,7 @@ public class TweetSentiment {
         //log.info("Received Tweets: {}",tweetStrings);
         //System.out.println(tweetStrings);
         //log.info();
-        logger.info("Testing 123");
+        logger.info("Testing 1234");
 
 
     }
