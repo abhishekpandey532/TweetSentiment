@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'tweet-sentiment
+
+  Performs Tweet Sentiment Analysis, logs sentiment scores to CW Metrics
+
+  '
+Outputs:
+  TweetSentimentFunction:
+    Description: TweetSentiment Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - TweetSentiment
+      - Arn
+Resources:
+  TweetSentiment:
+    Properties:
+      CodeUri: s3://abhishektweet/82b078d492d79ba887db5f02ace1a3e2
+      Handler: com.abhishektweet.serverless.tweetsentiment.lambda.TweetSentimentHandler::handleRequest
+      MemorySize: 768
+      Runtime: java8
+      Timeout: 60
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
