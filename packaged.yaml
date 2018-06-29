@@ -14,9 +14,12 @@ Outputs:
 Resources:
   TweetSentiment:
     Properties:
-      CodeUri: s3://abhishektweet/405f6693a329ad2ab4561dc5257e62e4
+      CodeUri: s3://abhishektweet/6c900e8a2b31fd9aac565766b6a8ea2e
       Handler: com.abhishektweet.serverless.tweetsentiment.lambda.TweetSentimentHandler::handleRequest
       MemorySize: 768
+      Policies:
+      - ComprehendBasicAccessPolicy: {}
+      - CloudWatchPutMetricPolicy: {}
       Runtime: java8
       Timeout: 60
     Type: AWS::Serverless::Function
