@@ -13,7 +13,6 @@ import com.amazonaws.services.comprehend.model.BatchDetectSentimentResult;
 import com.amazonaws.services.comprehend.model.SentimentScore;
 import com.google.common.collect.Lists;
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +23,6 @@ import java.util.stream.Collectors;
 
 //Core Tweet Sentiment Logic
 @Slf4j
-@RequiredArgsConstructor
 public class TweetSentiment {
 
     @NonNull private final AmazonComprehend comprehend=AmazonComprehendClientBuilder.standard().build();;
@@ -42,7 +40,7 @@ public class TweetSentiment {
 //                .withTextList("Amazon.com, Inc. is located in Seattle, WA and was founded July 5th, 1994 by Jeff Bezos, allowing customers to buy everything from books to blenders. Seattle is north of Portland and south of Vancouver, BC. Other notable Seattle - based companies are Starbucks and Boeing."));
 //        result.getResultList().get(0).getSentimentScore();
 //        logger.info("Sentiment Results: {}",result);
-        //logger.info("Received Tweets:"+String.valueOf(tweetStrings));
+        logger.info("Received Tweets:"+String.valueOf(tweetStrings));
     }
 
     private void putMetricData(List<MetricDatum> metricData) {

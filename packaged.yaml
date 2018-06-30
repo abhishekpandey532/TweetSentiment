@@ -14,7 +14,7 @@ Outputs:
 Resources:
   TweetSentiment:
     Properties:
-      CodeUri: s3://abhishektweet/6c900e8a2b31fd9aac565766b6a8ea2e
+      CodeUri: s3://abhishektweet/f5f39d56c8dbab3b0a609f56bed61a91
       Handler: com.abhishektweet.serverless.tweetsentiment.lambda.TweetSentimentHandler::handleRequest
       MemorySize: 768
       Policies:
