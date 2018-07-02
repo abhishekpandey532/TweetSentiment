@@ -62,6 +62,7 @@ public class TweetSentiment {
                 .map(this::toSentimentMetrics)
                 .flatMap(List::stream)
                 .collect(Collectors.toList());
+        
     }
 
     private List<MetricDatum> toSentimentMetrics(BatchDetectSentimentItemResult sentimentItemResult) {
