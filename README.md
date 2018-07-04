@@ -19,7 +19,7 @@ This is a sample template for tweet-sentiment - Below is a brief explanation of 
 └── template.yaml
 ```
 
-## Requirements
+## Requirements-1
 
 * AWS CLI already configured with at least PowerUser permission
 * [Java SE Development Kit 8 installed](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
