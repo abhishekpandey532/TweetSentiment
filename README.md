@@ -1,3 +1,6 @@
+## Tweet Sentiment Results on the topic : #FifaWorldCup
+![Tweet Sentiment Results](https://github.com/abhishekpandey532/TweetSentiment/blob/master/Sentiment_Analysis_on_%23Fifa.png)
+
 # tweet-sentiment
 
 This is a sample template for tweet-sentiment - Below is a brief explanation of what we have generated for you:
